@@ -1,16 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
-    <PackageReference Include="My.DDD" Version="1.0.0" />
-  </ItemGroup>
-
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+		<PackageReference Include="My.DDD" Version="1.0.0" />
+	</ItemGroup>
+	<Target Name="CopyNuget" AfterTargets="Build">
+		<Message Text="Coping nuget to $(ProjectDir)..\..\..\..\nugets\" Importance="high" />
+		<Copy
+            SourceFiles="@(NugetFiles)"
+            DestinationFolder="$(ProjectDir)..\..\..\..\nugets\" />
+	</Target>
 </Project>

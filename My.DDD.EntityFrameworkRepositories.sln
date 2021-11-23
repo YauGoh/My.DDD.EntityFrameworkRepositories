@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{69FD199A-4062-404B-B7A2-E7ED7C9A1AD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My.DDD.EntityFrameworkRepositories", "src\My.DDD.EntityFrameworkRepositories\My.DDD.EntityFrameworkRepositories.csproj", "{57351C22-1AF0-46FA-9145-9EBF5FB8CD4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My.DDD.EntityFrameworkRepositories.Tests", "src\My.DDD.EntityFrameworkRepositories.Tests\My.DDD.EntityFrameworkRepositories.Tests.csproj", "{FDA0FD32-589C-463F-BCD7-99BF9805318D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57351C22-1AF0-46FA-9145-9EBF5FB8CD4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57351C22-1AF0-46FA-9145-9EBF5FB8CD4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57351C22-1AF0-46FA-9145-9EBF5FB8CD4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57351C22-1AF0-46FA-9145-9EBF5FB8CD4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDA0FD32-589C-463F-BCD7-99BF9805318D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA0FD32-589C-463F-BCD7-99BF9805318D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA0FD32-589C-463F-BCD7-99BF9805318D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA0FD32-589C-463F-BCD7-99BF9805318D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{57351C22-1AF0-46FA-9145-9EBF5FB8CD4A} = {69FD199A-4062-404B-B7A2-E7ED7C9A1AD9}
+		{FDA0FD32-589C-463F-BCD7-99BF9805318D} = {69FD199A-4062-404B-B7A2-E7ED7C9A1AD9}
+	EndGlobalSection
+EndGlobal

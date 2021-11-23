@@ -43,7 +43,7 @@ namespace My.DDD.EntityFrameworkRepositories
 
                     TraverseType(entityType!);
 
-                    OnTypeTraversed?.Invoke(this, entityType);
+                    OnTypeTraversed?.Invoke(this, entityType!);
                 }
             }
         }
